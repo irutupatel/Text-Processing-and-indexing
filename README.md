@@ -1,6 +1,3 @@
-# Rutu Patel
-
-
 ## Description:
 This project will take you through a simplified workflow of preparing and
 indexing text in preparation for more comprehensive analysis. First, it
@@ -8,26 +5,26 @@ pre-processes any given text file in the preprocessor, and then perform
 indexing of the unique words using a map data structure.
 
 ## Dependencies:
-avl_tree.py
-unsorted_table_map.py
-sorted_table_map.py
-chain_hash_map.py
-probe_hash_map.py
-splay_tree.py
-red_black_tree.py
-binary_search_tree.py
-binary_tree.py
-Empty.py
-hash_map_base.py
-linked_binary_tree.py
-linked_queue.py
-map_base.py
-tree.py
+- avl_tree.py
+- unsorted_table_map.py
+- sorted_table_map.py
+- chain_hash_map.py
+- probe_hash_map.py
+- splay_tree.py
+- red_black_tree.py
+- binary_search_tree.py
+- binary_tree.py
+- Empty.py
+- hash_map_base.py
+- linked_binary_tree.py
+- linked_queue.py
+- map_base.py
+- tree.py
 
 ## Original:
-project4.py
-preprocessor.py
-Indexer.py
+- project4.py
+- preprocessor.py
+- Indexer.py
 
 ## Requirements:
 - Python 3
@@ -45,8 +42,8 @@ Indexer.py
 - optional indexFile (for indexed output)
 
 ## Run as:
-python3 project4.py [-h] [--map MAP] [--index INDEX] original preprocessed
-python3 preprocessor.py [-h] [--output OUTPUT] input stopwords
+- python3 project4.py [-h] [--map MAP] [--index INDEX] original preprocessed
+- python3 preprocessor.py [-h] [--output OUTPUT] input stopwords
 
 ## Operation:
 In the User Interface (UI), to show the user, the stats would be printed out
