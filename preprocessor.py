@@ -15,7 +15,7 @@ def preprocess(args):
     * Remove all words with less than three characters.
     '''
     stopwordsfile = args.stopwords
-# MVM: This is rather compact, could be simply done in a loop.
+    # MVM: This is rather compact, could be simply done in a loop.
     stopwords = [x.strip() for x in open(stopwordsfile, 'r').readlines()]
     
     inputtext = open(args.input, 'r')
