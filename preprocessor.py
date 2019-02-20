@@ -15,6 +15,7 @@ def preprocess(args):
     * Remove all words with less than three characters.
     '''
     stopwordsfile = args.stopwords
+
     # MVM: This is rather compact, could be simply done in a loop.
     stopwords = [x.strip() for x in open(stopwordsfile, 'r').readlines()]
     
@@ -27,6 +28,7 @@ def preprocess(args):
     stops = 0
     short = 0
     for line in inputtext:
+
         # Convert all to lower case.
         line = line.lower()
 
@@ -45,6 +47,7 @@ def preprocess(args):
         # -- when starting an old timey abbreviation: "'tis"
         # -- when starting an inner quotation
         # -- when contracting "had": "he'd"
+
         for i in range(len(words)):
             if words[i][-2:] == "'s" or words[i][-2:] == "s'":
                 words[i] = words[i][:-2]
@@ -56,6 +59,7 @@ def preprocess(args):
                 words[i] = words[i][:-2]
 
         for i in range(len(words)):
+            
             # Replace stopwords and short words with spaces.
             
             if words[i] in stopwords:
